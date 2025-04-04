@@ -1,0 +1,54 @@
+# 의존성 관련
+/node_modules
+package-lock.json
+
+# 프론트엔드 빌드 관련
+/testall_frontend/.next/
+/testall_frontend/out/
+/testall_frontend/build/
+/testall_frontend/node_modules/
+
+# 백엔드 관련
+/testall_backend/venv/
+/testall_backend/__pycache__/
+/testall_backend/**/__pycache__/
+/testall_backend/*.py[cod]
+/testall_backend/*$py.class
+/testall_backend/*.so
+/testall_backend/.Python
+/testall_backend/env/
+/testall_backend/build/
+/testall_backend/develop-eggs/
+/testall_backend/dist/
+/testall_backend/downloads/
+/testall_backend/eggs/
+/testall_backend/.eggs/
+/testall_backend/lib/
+/testall_backend/lib64/
+/testall_backend/parts/
+/testall_backend/sdist/
+/testall_backend/var/
+/testall_backend/*.egg-info/
+/testall_backend/.installed.cfg
+/testall_backend/*.egg
+
+# 환경 변수 파일 - 보안 상 Git에 포함하지 않는 것이 좋음
+.env
+/testall_frontend/.env*
+/testall_backend/.env*
+
+# 로그 파일
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS 관련 파일
+.DS_Store
+Thumbs.db
+
+# IDE 관련 파일
+.idea/
+.vscode/
+*.swp
+*.swo
