@@ -11,7 +11,7 @@ services:
       - ./backend:/app
     depends_on:
       - db
-      - redis
+      # - redis
 
   frontend:
     build:
@@ -38,15 +38,16 @@ services:
     ports:
       - "5432:5432"
 
-  redis:
-    image: redis:7
-    container_name: testall_redis
-    restart: always
-    ports:
-      - "6379:6379"
-    volumes:
-      - redis_data:/data
+  # redis:
+  #   image: redis:7
+  #   container_name: testall_redis
+  #   restart: always
+  #   ports:
+  #     - "6379:6379"
+  #   volumes:
+  #     - redis_data:/data
 
 volumes:
   postgres_data:
-  redis_data:
+
+  # redis_data:
